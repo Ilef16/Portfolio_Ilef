@@ -91,6 +91,38 @@ export interface ExperienceItem {
 
 export const experiences: ExperienceItem[] = [
   {
+    period: 'Février 2026 — Août 2026',
+    titleFr: 'Développeuse Full-Stack — Freelance',
+    titleEn: 'Full-Stack Developer — Freelance',
+    company: 'Projet Freelance',
+    bulletsFr: [
+      "Développement d'une solution complète de gestion scolaire Web et Mobile.",
+      'Développement frontend avec Next.js et backend avec Spring Boot.',
+      'Conception et intégration des fonctionnalités métier.',
+    ],
+    bulletsEn: [
+      'Development of a complete Web and Mobile school management solution.',
+      'Frontend development with Next.js and backend with Spring Boot.',
+      'Design and integration of business features.',
+    ],
+    tags: ['Next.js', 'Spring Boot', 'PostgreSQL'],
+  },
+  {
+    period: 'Juin 2026',
+    titleFr: 'Développeuse Web — Freelance',
+    titleEn: 'Web Developer — Freelance',
+    company: 'Projet Freelance',
+    bulletsFr: [
+      'Développement d\'une plateforme de gestion du transport maritime et tracking.',
+      'Développement avec Next.js et mise en ligne de l\'application.',
+    ],
+    bulletsEn: [
+      'Development of a maritime transport management and tracking platform.',
+      'Development with Next.js and deployment of the application.',
+    ],
+    tags: ['Next.js', 'Node.js'],
+  },
+  {
     period: 'Juillet 2025 — Octobre 2025',
     titleFr: 'Développeur Freelance',
     titleEn: 'Freelance Developer',
