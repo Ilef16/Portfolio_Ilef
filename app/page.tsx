@@ -169,19 +169,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Quick nav */}
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 14, justifyContent: 'center', marginTop: 56 }}>
-            {[
-              { href: '/parcours',    fr: 'Formation',   en: 'Education',  p: true  },
-              { href: '/experiences', fr: 'Expériences', en: 'Experience', p: false },
-              { href: '/competences', fr: 'Compétences', en: 'Skills',     p: false },
-              { href: '/projets',     fr: 'Projets',     en: 'Projects',   p: false },
-            ].map(item => (
-              <Link key={item.href} href={item.href} className={item.p ? 'btn-p' : 'btn-s'}>
-                {t(item.fr, item.en)}
-              </Link>
-            ))}
-          </div>
+        
         </div>
       </section>
     </div>

@@ -226,7 +226,7 @@ export const softSkills: SoftSkill[] = [
 ]
 
 export const languages = [
-  { flag: '🇸🇦', nameFr: 'Arabe', nameEn: 'Arabic', levelFr: 'Natif', levelEn: 'Native', pct: 100 },
+  { flag: 'AR', nameFr: 'Arabe', nameEn: 'Arabic', levelFr: 'Natif', levelEn: 'Native', pct: 100 },
   { flag: '🇫🇷', nameFr: 'Français', nameEn: 'French', levelFr: 'Courant', levelEn: 'Fluent', pct: 90 },
   { flag: '🇬🇧', nameFr: 'Anglais', nameEn: 'English', levelFr: 'Courant', levelEn: 'Fluent', pct: 85 },
 ]
@@ -244,6 +244,95 @@ export const certifications: Certification[] = [
   { titleFr: 'Certificat Big Data Engineer', titleEn: 'Big Data Engineer Certificate', issuer: 'IBM', year: '2024' },
   { titleFr: 'IA générative avec les modèles de diffusion', titleEn: 'Generative AI with Diffusion Models', issuer: 'NVIDIA', year: '2024' },
   { titleFr: 'Artificial Intelligence', titleEn: 'Artificial Intelligence', issuer: 'Certiport', year: '2024' },
+]
+
+// ── Tech Logo Map ────────────────────────────────────────────
+export const techLogoMap: Record<string, string> = {
+  // Programming Languages
+  'JavaScript': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg',
+  'TypeScript': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg',
+  'Python':     'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg',
+  'Java':       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg',
+  'C':          'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg',
+  'C#':         'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg',
+  'VB.NET':     'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dot-net/dot-net-original.svg',
+  'PHP':        'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg',
+  'Node.js':    'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg',
+  // Frameworks & Libraries
+  'Next.js':     'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-plain.svg',
+  'React.js':    'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',
+  'Angular':     'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularjs/angularjs-original.svg',
+  'Vue.js':      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg',
+  'Spring Boot': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg',
+  'Laravel':     'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg',
+  'Flask':       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg',
+  'ASP.NET':     'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dot-net/dot-net-original.svg',
+  'Flutter':     'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg',
+  // Data Science & AI
+  'TensorFlow':  'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg',
+  'PyTorch':     'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg',
+  'Keras':       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/keras/keras-original.svg',
+  'pandas':      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg',
+  'numpy':       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg',
+  // Databases
+  'PostgreSQL':  'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg',
+  'MySQL':       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg',
+  'MongoDB':     'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg',
+  'Oracle':      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg',
+  // DevOps & Tools
+  'Docker':      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg',
+  'Git':         'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg',
+  'Jenkins':     'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jenkins/jenkins-original.svg',
+  'Postman':     'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg',
+  'Jira':        'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original.svg',
+  // Testing
+  'Jest':        'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg',
+  'Selenium':    'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/selenium/selenium-original.svg',
+}
+
+// ── Associations ────────────────────────────────────────────
+export interface AssociationItem {
+  nameFr: string
+  nameEn: string
+  period: string
+  roleFr: string
+  roleEn: string
+  descFr?: string
+  descEn?: string
+  emoji?: string
+}
+
+export const associations: AssociationItem[] = [
+  {
+    nameFr: 'Scout Tunisien',
+    nameEn: 'Tunisian Scout',
+    period: '2011 — 2025',
+    roleFr: 'Membre',
+    roleEn: 'Member',
+    descFr: "Engagement bénévole au sein du mouvement scout tunisien pendant 14 ans. Développement du leadership, de la solidarité et du travail en équipe.",
+    descEn: "Volunteer involvement in the Tunisian Scout movement for 14 years. Development of leadership, solidarity, and teamwork.",
+    emoji: '⚜️',
+  },
+  {
+    nameFr: 'Club Python',
+    nameEn: 'Python Club',
+    period: '2024',
+    roleFr: 'Membre',
+    roleEn: 'Member',
+    descFr: "Participation aux activités du club Python : ateliers de programmation, partage de projets et veille technologique.",
+    descEn: "Participation in Python club activities: coding workshops, project sharing, and tech watch.",
+    emoji: '🐍',
+  },
+  {
+    nameFr: 'Club MTC',
+    nameEn: 'MTC Club',
+    period: '2023',
+    roleFr: 'Membre',
+    roleEn: 'Member',
+    descFr: "Membre actif du club MTC, axé sur les technologies et l'innovation numérique.",
+    descEn: "Active member of the MTC club, focused on technology and digital innovation.",
+    emoji: '💡',
+  },
 ]
 
 // ── Projects ─────────────────────────────────────────────────
