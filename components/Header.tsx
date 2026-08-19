@@ -6,12 +6,12 @@ import { useLang } from '@/context/LangContext'
 import { useTheme } from '@/context/ThemeContext'
 
 const navItems = [
-  { href: '/',            fr: 'Accueil',     en: 'Home' },
-  { href: '/parcours',    fr: 'Formation',   en: 'Education' },
-  { href: '/experiences', fr: 'Expériences', en: 'Experience' },
-  { href: '/competences', fr: 'Compétences', en: 'Skills' },
-  { href: '/projets',     fr: 'Projets',     en: 'Projects' },
-  { href: '/contact',     fr: 'Contact',     en: 'Contact' },
+  { href: '/',                  fr: 'Accueil',       en: 'Home' },
+  { href: '/parcours',          fr: 'Formation',     en: 'Education' },
+  { href: '/experiences',       fr: 'Expériences',   en: 'Experience' },
+  { href: '/competences',       fr: 'Compétences',   en: 'Skills' },
+  { href: '/projets',           fr: 'Projets',       en: 'Projects' },
+  { href: '/vie-associative',   fr: 'Associatif',    en: 'Community' },
 ]
 
 export default function Header() {

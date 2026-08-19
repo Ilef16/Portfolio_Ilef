@@ -2,7 +2,7 @@
 
 import { useLang } from '@/context/LangContext'
 import SectionTitle from '@/components/SectionTitle'
-import { skillCategories, softSkills, languages, certifications } from '@/lib/data'
+import { skillCategories, softSkills, languages, certifications, techLogoMap } from '@/lib/data'
 
 const skillIcons: Record<number, React.ReactNode> = {
   0: <><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></>,
@@ -37,7 +37,20 @@ export default function CompetencesPage() {
             </h3>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
               {cat.items.map(item => (
-                <span key={item} className="sbadge">{item}</span>
+                <span key={item} className="sbadge" style={{ display: 'inline-flex', alignItems: 'center', gap: 5 }}>
+                  {techLogoMap[item] && (
+                    <img
+                      src={techLogoMap[item]}
+                      alt={item}
+                      width={15}
+                      height={15}
+                      loading="lazy"
+                      style={{ flexShrink: 0 }}
+                      onError={e => { (e.currentTarget as HTMLImageElement).style.display = 'none' }}
+                    />
+                  )}
+                  {item}
+                </span>
               ))}
             </div>
           </div>
