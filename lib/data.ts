@@ -269,13 +269,66 @@ export interface Certification {
   titleEn: string
   issuer: string
   year: string
+  image?: string
+  skillsFr?: string[]
+  skillsEn?: string[]
 }
 
 export const certifications: Certification[] = [
-  { titleFr: 'Building AI Agents with Google ADK', titleEn: 'Building AI Agents with Google ADK', issuer: 'DataCamp', year: '2026' },
-  { titleFr: 'Certificat Big Data Engineer', titleEn: 'Big Data Engineer Certificate', issuer: 'IBM', year: '2024' },
-  { titleFr: 'IA générative avec les modèles de diffusion', titleEn: 'Generative AI with Diffusion Models', issuer: 'NVIDIA', year: '2024' },
-  { titleFr: 'Artificial Intelligence', titleEn: 'Artificial Intelligence', issuer: 'Certiport', year: '2024' },
+  {
+    titleFr: 'Building AI Agents with Google ADK',
+    titleEn: 'Building AI Agents with Google ADK',
+    issuer: 'DataCamp',
+    year: '2026',
+    image: '/image.png',
+    skillsFr: ['Agents IA', 'Google ADK', 'Python', 'LLM', 'Orchestration d\'agents'],
+    skillsEn: ['AI Agents', 'Google ADK', 'Python', 'LLM', 'Agent Orchestration'],
+  },
+  {
+    titleFr: 'Certificat Big Data Engineer',
+    titleEn: 'Big Data Engineer Certificate',
+    issuer: 'IBM',
+    year: '2024',
+    image: '/Big Data Engineer Certificate.png',
+    skillsFr: ['Big Data', 'Hadoop', 'Spark', 'NoSQL', 'Pipeline de données', 'Cloud IBM'],
+    skillsEn: ['Big Data', 'Hadoop', 'Spark', 'NoSQL', 'Data Pipeline', 'IBM Cloud'],
+  },
+  {
+    titleFr: 'IA générative avec les modèles de diffusion',
+    titleEn: 'Generative AI with Diffusion Models',
+    issuer: 'NVIDIA',
+    year: '2024',
+    image: '/nvidia.png',
+    skillsFr: ['IA Générative', 'Modèles de diffusion', 'Deep Learning', 'PyTorch', 'CUDA'],
+    skillsEn: ['Generative AI', 'Diffusion Models', 'Deep Learning', 'PyTorch', 'CUDA'],
+  },
+  {
+    titleFr: 'Artificial Intelligence',
+    titleEn: 'Artificial Intelligence',
+    issuer: 'Certiport',
+    year: '2024',
+    image: '/certif.png',
+    skillsFr: ['Intelligence Artificielle', 'Machine Learning', 'Vision par ordinateur', 'NLP', 'Éthique IA'],
+    skillsEn: ['Artificial Intelligence', 'Machine Learning', 'Computer Vision', 'NLP', 'AI Ethics'],
+  },
+  {
+    titleFr: 'Marketing Strategy Fundamentals',
+    titleEn: 'Marketing Strategy Fundamentals',
+    issuer: 'SMStudy',
+    year: '2023',
+    image: '/MARKETING Strategy Fundamentals.png',
+    skillsFr: ['Stratégie Marketing', 'Analyse de marché', 'Segmentation', 'Positionnement', 'SCMS-F'],
+    skillsEn: ['Marketing Strategy', 'Market Analysis', 'Segmentation', 'Positioning', 'SCMS-F'],
+  },
+  {
+    titleFr: 'Scrum Fundamentals Certified',
+    titleEn: 'Scrum Fundamentals Certified',
+    issuer: 'SCRUMstudy',
+    year: '2023',
+    image: '/Scrun Fundamentals Certified.png',
+    skillsFr: ['Scrum', 'Agilité', 'Gestion de projet', 'Sprint', 'Product Backlog', 'SFC'],
+    skillsEn: ['Scrum', 'Agility', 'Project Management', 'Sprint', 'Product Backlog', 'SFC'],
+  },
 ]
 
 // ── Tech Logo Map ────────────────────────────────────────────
