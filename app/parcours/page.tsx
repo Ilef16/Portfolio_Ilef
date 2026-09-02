@@ -3,7 +3,7 @@
 import { useLang } from '@/context/LangContext'
 import SectionTitle from '@/components/SectionTitle'
 import TechTag from '@/components/TechTag'
-import { education, training } from '@/lib/data'
+import { education } from '@/lib/data'
 
 export default function ParcoursPage() {
   const { t } = useLang()
@@ -46,25 +46,6 @@ export default function ParcoursPage() {
         ))}
       </div>
 
-      {/* Extra training */}
-      <SectionTitle
-        className="mt-16"
-        title={t('Formations', 'Additional')}
-        highlight={t('Complémentaires', 'Training')}
-        subtitle={t('Certifications et formations para-académiques', 'Certifications and extra-curricular training')}
-      />
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(280px,1fr))', gap: 20 }}>
-        {training.map((item, i) => (
-          <div key={i} className="glass-card" style={{ padding: 22 }}>
-            <h3 style={{ fontSize: '0.82rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '1px', marginBottom: 8, color: 'var(--v2)' }}>
-              {t(item.titleFr, item.titleEn)}
-            </h3>
-            <p style={{ fontSize: '0.86rem', color: 'var(--tm)', lineHeight: 1.6 }}>
-              {t(item.institutionFr, item.institutionEn)}
-            </p>
-          </div>
-        ))}
-      </div>
     </div>
   )
 }

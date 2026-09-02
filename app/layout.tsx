@@ -6,8 +6,8 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'Ilef Ben Ayed — Portfolio',
-  description: 'Ingénieure en Génie Logiciel & Informatique Décisionnelle',
+  title: 'Ilef Ben Ayed',
+  description: 'Ingénieure en Génie Logiciel et Informatique Décisionnelle',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
